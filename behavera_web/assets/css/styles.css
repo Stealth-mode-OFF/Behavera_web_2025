@@ -1,0 +1,143 @@
+/* === Behavera Global Styles === */
+
+/* Reset některých základních prvků */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Definice CSS proměnných pro barvy */
+:root {
+  --color-primary: #5e37b5;  /* tmavší fialová z loga */
+  --color-secondary: #ede7f6;  /* světle fialové pozadí */
+  --color-accent: #00c08b;  /* zelený akcent na CTA a ikonách */
+  --color-text: #1a1a1a;  /* tmavý text pro dobrou čitelnost */
+  --font-family-base: 'Inter', 'Poppins', sans-serif;
+}
+
+/* Globální font a barva textu */
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+/* Kontejner pro zarovnání obsahu na střed */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+
+/* Styl navigace */
+header {
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar a.logo {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* CTA tlačítka */
+.btn {
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #009f74;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* Responsivita */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+}
