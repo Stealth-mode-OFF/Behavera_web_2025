@@ -1,150 +1,219 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="description" content="Behavera is a B2B SaaS HR-Tech platform helping CEOs and HR leaders boost engagement, retention, and performance through data-driven insights.">
-  <meta name="keywords" content="employee engagement, HR SaaS, leadership analytics, company culture, Behavera">
+  <meta name="description" content="Flexible SaaS pricing for leaders who need real-time engagement intelligence. Choose Echo Pulse, expand with Growth, or launch full-stack HR analytics with Behavera Enterprise.">
+  <meta name="keywords" content="Behavera pricing, HR SaaS, employee engagement software, pulse surveys, leadership analytics">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Behavera – Clarity for Leaders">
-  <meta property="og:description" content="Build companies where people love to work. Discover Behavera – HR analytics for CEOs.">
+  <meta property="og:title" content="Behavera – Plans that scale with your leadership">
+  <meta property="og:description" content="Decide faster and lead smarter with Behavera pricing built for CEO and HR teams.">
   <meta property="og:image" content="https://stealth-mode-off.github.io/Behavera-Website-2025/assets/og-image.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stealth-mode-off.github.io/Behavera-Website-2025/">
+  <meta property="og:url" content="https://stealth-mode-off.github.io/Behavera-Website-2025/pricing.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#5e37b5">
-  <link rel="canonical" href="https://stealth-mode-off.github.io/Behavera-Website-2025/">
+  <link rel="canonical" href="https://stealth-mode-off.github.io/Behavera-Website-2025/pricing.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Behavera | Ceník a produkty</title>
+  <title>Behavera | Plans & Pricing</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
   <style>
     :root {
-      --color-primary: #5e37b5;
-      --color-accent: #00c08b;
-      --color-bg: #f8f6fc;
-      --font-family-base: 'Inter', sans-serif;
+      --pricing-bg: #f8f6fc;
+      --pricing-card-bg: #ffffff;
+      --pricing-shadow: 0 20px 60px rgba(22, 10, 65, 0.08);
     }
     body {
-      font-family: var(--font-family-base);
-      margin: 0;
-      background: var(--color-bg);
-      color: #1a1a1a;
-      line-height: 1.6;
+      background: var(--pricing-bg);
     }
-    header, footer {
-      background: white;
-      border-bottom: 1px solid #eee;
-      padding: 1rem 2rem;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .navbar a {
-      text-decoration: none;
-      color: #1a1a1a;
-      margin: 0 0.75rem;
-      font-weight: 500;
-    }
-    .navbar a:hover { color: var(--color-primary); }
-
-    /* HERO */
-    .hero {
+    .hero-pricing {
       text-align: center;
-      padding: 5rem 1.5rem 3rem;
+      padding: 5rem 2rem 4rem;
+      background: linear-gradient(135deg, #f5f2ff, #e8f8f2);
     }
-    .hero h1 {
+    .hero-pricing h1 {
+      font-size: 2.9rem;
       color: var(--color-primary);
-      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    .hero p {
-      font-size: 1.1rem;
-      color: #333;
-      max-width: 700px;
-      margin: 0 auto;
+    .hero-pricing p {
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: #3a3652;
     }
-
-    /* PRICING CARDS */
-    .pricing {
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-actions .btn {
+      display: inline-block;
+      padding: 0.85rem 1.6rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .hero-actions .btn-outline {
+      background: transparent;
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      transition: all 0.2s ease;
+    }
+    .hero-actions .btn-outline:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+    .plans-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
       margin: 3rem auto;
       padding: 0 2rem;
     }
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.2s ease;
+    .plan-card {
+      background: var(--pricing-card-bg);
+      border-radius: 18px;
+      padding: 2.5rem 2rem;
+      box-shadow: var(--pricing-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
-    .card:hover { transform: translateY(-4px); }
-    .card h2 { color: var(--color-primary); margin-bottom: 0.5rem; }
-    .card p { margin-bottom: 1rem; }
-    .price { font-size: 1.5rem; font-weight: bold; color: var(--color-accent); }
-    .btn {
-      display: inline-block;
-      background: var(--color-accent);
-      color: white;
-      padding: 0.7rem 1.3rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.2s;
+    .plan-card.highlight {
+      border: 2px solid var(--color-primary);
+      transform: translateY(-10px);
     }
-    .btn:hover { background: #009f74; }
-
-    /* ROI CALCULATOR */
-    .calculator {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      max-width: 600px;
-      margin: 5rem auto;
-      padding: 2rem;
-      text-align: center;
-    }
-    .calculator h3 {
+    .plan-card h3 {
+      font-size: 1.4rem;
       color: var(--color-primary);
-      margin-bottom: 1rem;
     }
-    .slider-value { font-weight: bold; color: var(--color-accent); }
-    input[type=range] {
-      width: 80%;
-      margin: 1rem 0;
+    .plan-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-accent);
     }
-
-    /* CTA SECTION */
-    .cta {
-      background: linear-gradient(135deg, #5e37b5, #00c08b);
+    .plan-meta {
+      font-size: 0.95rem;
+      color: #4f4a6a;
+    }
+    .plan-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .plan-card li {
+      margin-bottom: 0.6rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .plan-card li::before {
+      content: "•";
+      color: var(--color-accent);
+      position: absolute;
+      left: 0;
+    }
+    .compare-table {
+      overflow-x: auto;
+      margin: 4rem auto;
+      max-width: 1100px;
+      padding: 0 2rem;
+    }
+    .compare-table table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--pricing-shadow);
+    }
+    .compare-table th,
+    .compare-table td {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ece7fb;
+      font-size: 0.95rem;
+    }
+    .compare-table th {
+      background: #f1eefb;
+      color: #37296c;
+    }
+    .compare-table td:first-child,
+    .compare-table th:first-child {
+      text-align: left;
+    }
+    .roi-section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 3rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: var(--pricing-shadow);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+    .roi-section blockquote {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #3a3652;
+      margin: 0;
+    }
+    .roi-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .roi-metric {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      background: #f5f2ff;
+    }
+    .faq-section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e0dbf3;
+      padding: 1.2rem 0;
+    }
+    .faq-item h4 {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+    .faq-item p {
+      margin: 0.5rem 0 0;
+      display: none;
+      color: #4f4a6a;
+    }
+    .faq-item.open p {
+      display: block;
+    }
+    .cta-banner {
+      background: linear-gradient(120deg, #5e37b5, #00c08b);
       color: white;
       text-align: center;
       padding: 4rem 2rem;
+      border-radius: 24px;
+      margin: 5rem 2rem;
     }
-    .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
-    .cta p { max-width: 700px; margin: 0 auto 2rem; }
-    .cta a {
-      background: white;
-      color: var(--color-primary);
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
-      font-weight: 600;
-      text-decoration: none;
+    .cta-banner p {
+      max-width: 640px;
+      margin: 0.5rem auto 2rem;
     }
-    footer {
-      background: #fafafa;
-      text-align: center;
-      padding: 2rem;
-      color: #666;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
+    @media (max-width: 768px) {
+      .hero-pricing h1 {
+        font-size: 2.2rem;
+      }
+      .compare-table table {
+        font-size: 0.9rem;
+      }
     }
   </style>
   <script type="application/ld+json">
@@ -154,7 +223,7 @@
     "name": "Behavera",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "url": "https://stealth-mode-off.github.io/Behavera-Website-2025/",
+    "url": "https://stealth-mode-off.github.io/Behavera-Website-2025/pricing.html",
     "description": "Behavera provides CEOs and HR leaders with behavioral analytics, pulse surveys, and AI insights to drive engagement and performance.",
     "offers": {
       "@type": "Offer",
@@ -177,44 +246,126 @@
         <a href="pricing.html">Ceník</a>
         <a href="case-studies.html">Příběhy</a>
         <a href="about.html">O nás</a>
+        <a href="demo.html">Demo</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <h1>Jednoduchý ceník. Reálné výsledky.</h1>
-    <p>Platíte jen za to, co skutečně posouvá výkon vaší firmy. Žádné licenční pasti, jen čistá hodnota.</p>
-  </section>
-
-  <section class="pricing">
-    <div class="card">
-      <h2>Echo Pulse</h2>
-      <p>Měsíční přehled o angažovanosti a zdraví týmů v reálném čase.</p>
-      <div class="price">99 Kč / uživatel / měsíc</div>
-      <p>✔ Okamžitý přehled<br>✔ Doporučení AI<br>✔ Nástroj pro manažery</p>
-      <a href="demo.html" class="btn">Vyzkoušet zdarma</a>
-    </div>
-    <div class="card">
-      <h2>VIP HR Intervention</h2>
-      <p>Osobní konzultace s garantovaným výsledkem a řešením klíčových problémů.</p>
-      <div class="price">65 000 Kč / firma</div>
-      <p>✔ Individuální analýza<br>✔ Leadership diagnostika<br>✔ Akční plán do 48 h</p>
-      <a href="demo.html" class="btn">Objednat konzultaci</a>
+  <section class="hero-pricing">
+    <h1>Decide faster. Lead smarter. Pay only for what matters.</h1>
+    <p>Flexible plans for teams of 50 to 500+. Anchor your strategy with Echo Pulse, expand into development intelligence, or deploy Behavera as your full HR data stack.</p>
+    <div class="hero-actions">
+      <a class="btn" href="demo.html">Book a Demo</a>
+      <a class="btn btn-outline" href="#plans">Compare plans</a>
     </div>
   </section>
 
-  <section class="calculator">
-    <h3>Odhadněte návratnost</h3>
-    <p>Kolik zaměstnanců máte?</p>
-    <input type="range" id="employees" min="10" max="500" value="100" />
-    <p><span id="empValue" class="slider-value">100</span> zaměstnanců</p>
-    <p>Odhadovaná úspora: <span id="roiValue" class="slider-value">125 000</span> Kč/měsíc</p>
+  <section id="plans" class="plans-grid">
+    <article class="plan-card">
+      <p class="plan-meta">Starter · Echo Pulse</p>
+      <h3>Control the noise</h3>
+      <p class="plan-price">99 CZK / employee / month</p>
+      <p class="plan-meta">Monthly pulse, engagement radar, exportable trends.</p>
+      <ul>
+        <li>Guided launches in under 10 days</li>
+        <li>Unlimited dashboards for leaders</li>
+        <li>AI insights + recommended actions</li>
+      </ul>
+      <a class="btn" href="demo.html">Start pilot</a>
+    </article>
+
+    <article class="plan-card highlight">
+      <p class="plan-meta">Growth · Engagement + Development Suite</p>
+      <h3>Scale clarity across teams</h3>
+      <p class="plan-price">Custom quote</p>
+      <p class="plan-meta">Pulse + development journeys + leadership diagnostics.</p>
+      <ul>
+        <li>Competency games & culture fit signals</li>
+        <li>Personalized playbooks for managers</li>
+        <li>Dedicated Customer Success Partner</li>
+      </ul>
+      <a class="btn" href="demo.html">Talk to sales</a>
+    </article>
+
+    <article class="plan-card">
+      <p class="plan-meta">Enterprise · Full deployment</p>
+      <h3>Design your people OS</h3>
+      <p class="plan-price">Let's build together</p>
+      <p class="plan-meta">Tailored workflows, security reviews, on-site enablement.</p>
+      <ul>
+        <li>Private cloud or on-prem deployment</li>
+        <li>SSO, API & BI integrations</li>
+        <li>Change management & leadership labs</li>
+      </ul>
+      <a class="btn" href="demo.html">Get a roadmap</a>
+    </article>
   </section>
 
-  <section class="cta">
-    <h2>Získejte svůj plán na míru</h2>
-    <p>Domluvte si 15minutový call, kde vám ukážeme, jak Behavera odhalí slabá místa a ušetří desítky hodin měsíčně.</p>
-    <a href="demo.html">Zarezervovat demo</a>
+  <div class="compare-table">
+    <table>
+      <tr>
+        <th>Capability</th>
+        <th>Starter</th>
+        <th>Growth</th>
+        <th>Enterprise</th>
+      </tr>
+      <tr><td>Echo Pulse surveys & alerts</td><td>✔</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Engagement & burnout risk index</td><td>✔</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Development journeys & nudges</td><td>–</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Culture Fit simulations</td><td>–</td><td>On demand</td><td>✔</td></tr>
+      <tr><td>Leadership competency mapping</td><td>–</td><td>✔</td><td>✔ + tailored</td></tr>
+      <tr><td>Analytics API & data warehouse sync</td><td>–</td><td>✔</td><td>✔ + custom</td></tr>
+      <tr><td>Dedicated success manager</td><td>–</td><td>✔</td><td>Executive sponsor</td></tr>
+      <tr><td>Onboarding & change enablement</td><td>Guided self-serve</td><td>Live sessions</td><td>On-site program</td></tr>
+    </table>
+  </div>
+
+  <section class="roi-section">
+    <div>
+      <h2>From 3 minutes per month to insights that save millions.</h2>
+      <p>Behavera surfaces the early warning signals that usually cost teams their best people. CEOs and HR leaders use it to connect morale, leadership, and revenue.</p>
+    </div>
+    <div class="roi-metrics">
+      <div class="roi-metric">
+        <span>20% less manager time on reporting</span>
+        <strong>Expando</strong>
+      </div>
+      <div class="roi-metric">
+        <span>35% faster intervention on churn risk</span>
+        <strong>O2 Slovakia</strong>
+      </div>
+      <div class="roi-metric">
+        <span>Retention lift in first 90 days</span>
+        <strong>+8 pts avg.</strong>
+      </div>
+    </div>
+    <blockquote>“Echo Pulse gives us the signal before Slack rumors do. My leadership meetings start with data, not speculation.” — Karol Veleba, CEO Effectix</blockquote>
+  </section>
+
+  <section class="faq-section">
+    <h2>Pricing questions we hear most</h2>
+    <div class="faq-item">
+      <h4>How is the price calculated?</h4>
+      <p>Starter runs on a per-active-employee licence. Growth and Enterprise combine employee tiers with modules you activate. We tailor discounts for 1,000+ employees.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can we start small?</h4>
+      <p>Yes. Begin with a 30-day pilot for 10–25 people, validate insights, and then expand when you have the business case.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What languages and security standards do you support?</h4>
+      <p>Behavera supports EN/CZ/SK and follows SOC2-aligned security practices with custom DPA and SSO for Enterprise.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do you integrate with HRIS or BI tools?</h4>
+      <p>Yes. Growth and Enterprise include API + webhooks and native exports for BambooHR, Personio, and PowerBI.</p>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Start your free pilot today — no credit card needed.</h2>
+    <p>We’ll map your current engagement blind spots, launch a pulse in under a week, and deliver an ROI report for your leadership meeting.</p>
+    <a class="btn" href="demo.html">Book a 15-minute call</a>
   </section>
 
   <footer>
@@ -222,14 +373,10 @@
   </footer>
 
   <script defer>
-    const emp = document.getElementById('employees');
-    const empValue = document.getElementById('empValue');
-    const roiValue = document.getElementById('roiValue');
-    emp.addEventListener('input', () => {
-      const val = parseInt(emp.value);
-      empValue.textContent = val;
-      const roi = val * 1250;
-      roiValue.textContent = roi.toLocaleString('cs-CZ');
+    document.querySelectorAll('.faq-item h4').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        toggle.parentElement.classList.toggle('open');
+      });
     });
   </script>
 </body>
