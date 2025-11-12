@@ -21,11 +21,11 @@ This repository hosts the 2025 marketing website revamp.
 ## 📁 Structure
 
 ```
-/assets/css/styles.css     → global styling and variables
-index.html                 → homepage with hero + value sections
-pricing.html               → product pricing and ROI calculator
-about.html                 → company and team
-case-studies.html          → client stories and testimonials (planned)
+/docs/assets/css/styles.css  → global styling and variables
+/docs/index.html             → homepage with hero + value sections
+/docs/pricing.html           → SaaS pricing + ROI calculator
+/docs/about.html             → team, story, manifesto
+/docs/case-studies.html      → reference stories and testimonials
 ```
 
 ---
@@ -39,7 +39,7 @@ To preview locally:
    cd Behavera-Website-2025
    ```
 2. Open in **VS Code**
-3. Right-click `index.html` → **“Open with Live Server”**  
+3. Right-click `docs/index.html` → **“Open with Live Server”**  
    (Install extension “Live Server” if needed)
 4. Page will be available at `http://127.0.0.1:5500`
 
@@ -47,7 +47,7 @@ To preview locally:
 
 ## 🔁 Deployment
 
-GitHub Pages is enabled on `main` branch (root).  
+GitHub Pages is enabled on `main` branch, `docs/` folder.  
 Every commit to `main` = automatic deployment.
 
 To publish updates:
