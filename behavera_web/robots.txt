@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stealth-mode-off.github.io/Behavera-Website-2025/sitemap.xml
